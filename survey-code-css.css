@@ -1,0 +1,72 @@
+<style>
+
+body {
+}  
+  
+header {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+form {
+  font-family: Helvetica;
+  border-color: #C3B8B2;
+  border-width: 2px;
+  border-style: solid;
+  width: 500px;
+  background-color: #F3D2C2;
+  font-size: 14px;
+  margin: auto;
+}
+
+#info {
+  position: relative;
+  left: 2em;
+  top: 2em;
+}
+#ages {
+  position: relative;
+  left: 2em;
+}
+
+#hours {
+  position: relative;
+  left: 2em;
+}
+
+#social-media {
+  width: 400px;
+  display: flex;
+  position: relative;
+  left: 2em;
+}
+
+#genres {
+  position: relative;
+  left: 2em;
+}
+
+#genre-box {
+  width: 450px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+}
+textarea {
+  position: relative;
+  width: 450px;
+  display: flex;
+  margin: auto;
+}
+
+#submit-section {
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+button {
+  position: relative;
+  padding: 10px;
+  margin: auto;
+}
+</style>

@@ -1,0 +1,117 @@
+<main>
+  <header>
+    <h1 id="title">Media Faves</h1>
+    <p id="description">Tell me about your media interests!</p>
+  </header>
+  <form id="survey-form" action="media-fave-answers" method="post">
+    <section id="info">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </section>
+      <br> <br>
+        <section id="ages">
+      <p id="age-range">Select your age range:</p>
+      <div id="age-box" name="ages">
+      <label for="13-17">
+        <input id="13-17" value="13-17" type="radio" name="ages">13-17
+      </label>
+      <label for="18-21">
+        <input id="18-21" value="18-21" type="radio" name="ages">18-21
+      </label>
+      <label for="22-30">
+        <input id="22-30" value="22-30" type="radio" name="ages">22-30
+      </label>
+      <label for="31-40">
+        <input id="31-40" value="13-17" type="radio" name="ages">31-40
+      </label>
+      <label for="40-54">
+        <input id="40-54" value="40-54" type="radio" name="ages">40-54
+      </label>
+      <label for="55-plus">
+        <input id="55-plus" value="55-plus" type="radio" name="ages">55+
+      </label>
+      </div>
+    </section>
+    <br>
+    <section id="hours">
+      <label id="number-label" for="number">How many hours a week do you watch television, movies, or streaming services?</label>
+      <input type="number" id="number" min="0" max="168" step="0.5" placeholder="#">
+    </section>
+    
+    
+    <br>
+    
+    <section id="social-media">
+      <label id="dropdown-label" for="dropdown">Select your preferred social media type(s):</label>
+      <br>
+      <select id="dropdown" multiple>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="pinterest">Pinterest</option>
+        <option value="reddit">Reddit</option>
+        <option value="snapchat">Snapchat</option>
+        <option value="tiktok">TikTok</option>
+        <option value="twitter">Twitter</option>
+        <option value="whatsapp">Whatsapp</option>
+        <option value="youtube">YouTube</option>
+      </select>
+    </section
+      
+    <br>
+    
+    <section id="genres">
+      <p id="genre-text">Select your favorite genres of entertainment:</p>
+      <div id="genre-box">
+        <label for="action">
+          <input id="action" value="action" type="checkbox" name="action">Action
+        </label>
+        <label for="adventure">
+          <input id="adventure" value="adventure" type="checkbox" name="adventure">Adventure
+        </label>
+        <label for="comedy">
+          <input id="comedy" value="comedy" type="checkbox" name="comedy">Comedy
+        </label>
+        <label for="crime-and-mystery">
+          <input id="crime-and-mystery" value="crime-and-mystery" type="checkbox" name="crime-and-mystery">Crime/Mystery
+        </label>
+        <label for="drama">
+          <input id="drama" value="drama" type="checkbox" name="drama">Drama
+        </label>
+        <label for="historical-fiction">
+          <input id="historical-fiction" value="historical-fiction" type="checkbox" name="historical-fiction">Historical Fiction
+        </label>
+        <label for="history">
+          <input id="history" value="history" type="checkbox" name="history">History
+        </label>
+        <label for="horror">
+          <input id="horror" value="horror" type="checkbox" name="horror">Horror
+        </label>
+        <label for="reality">
+          <input id="reality" value="reality" type="checkbox" name="reality">Reality
+        </label>
+        <label for="romance">
+          <input id="romance" value="romance" type="checkbox" name="romance">Romance
+        </label>
+        <label for="satire">
+          <input id="satire" value="satire" type="checkbox" name="satire">Satire
+        </label>
+        <label for="science-fiction">
+          <input id="science-fiction" value="science-fiction" type="checkbox" name="science-fiction">Science Fiction
+        </label>
+        <br>
+        <label for="other-genre">Other:
+          <input id="other-genre" type="text" name="other-genre">
+        </label>
+      </div>
+    </section>
+    <br>
+    <textarea placeholder="Enter any additional comments."></textarea>
+    <br>
+    <section id="submit-section">
+      <button id="submit" type="submit" value="submit">Submit Your Responses</button>
+    </section>
+  </form>
+</main>
