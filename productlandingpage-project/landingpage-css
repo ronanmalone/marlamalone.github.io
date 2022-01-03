@@ -1,0 +1,233 @@
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --top-spacing: 150px;
+  scroll-padding-top: var(--top-spacing);
+}
+body {
+  background-color: #eee;
+  font-family: Helvetica;
+  margin: var(--top-spacing) auto;
+}
+
+#page-wrapper {
+  position: relative;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+a:hover {
+  color: #511700;
+}
+
+.grid {
+  display: flex;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin:  auto;
+}
+
+.btn {
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7EAE5;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+.logo {
+  width: 60vw;
+  padding: 0.5em;
+  display: flex;
+  flex-grow: 1;
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 70px;
+  display: flex;
+  float: left;
+}
+.logo > h1 {
+  font-size: 2em;
+  padding-left: 10px;
+  display: flex;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .logo > img {
+    margin: auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9em;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#hero input[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+#our-noodles {
+  margin: var(--top-spacing) auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 70vw;
+  padding: 5px;
+  gap: 30px;
+}
+
+@media (max-width: 650px) {
+  #our-noodles {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+#get-inspired {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#get-inspired > iframe {
+  max-width: 560px;
+  width: 100%;
+  margin: auto;
+}
+#noodle-accessories {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  gap: 1.5em;
+}
+
+footer > span {
+  display: flex;
+  text-align: center;
+  font-size: 0.9em;
+  color: #444;
+}
+</style>
