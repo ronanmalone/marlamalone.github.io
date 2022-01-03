@@ -1,0 +1,70 @@
+<main>
+  <div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+    <img id="header-img" src="https://github.com/marlamalone/marlamalone.github.io/blob/main/productlandingpage-project/catnoodle-color.png?raw=true"
+         alt="logo of cat eating noodles"/>
+    <h1 id"head-text">wow it's noodles</h1></div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#noodles">Noodles</a></li>
+        <li><a class="nav-link" href="#get-inspired">Get Inspired</a></li>
+        <li><a class="nav-link" href="#noodle-accessories">Accessories</a></li>
+    </nav>
+  </header>
+    </div>
+    <section id="hero">
+    <h2>Join the Noodle Gang</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+    <div class="container">
+    <section id="noodles">
+        <div class="desc">
+          <h2>What Are Noodles?</h2>
+          <p>
+            Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings. Noodles can be refrigerated for short-term storage or dried and stored for future use.
+          </p>
+      </div>
+        <div class="desc">
+          <h2>How Are Noodles?</h2>
+          <p>
+            Noodles are usually cooked in boiling water, sometimes with cooking oil or salt added. They are also often pan-fried or deep-fried. Noodle dishes can include a sauce or noodles can be put into soup.
+          </p>
+      </div>
+        <div class="desc">
+          <h2>Where From Noodles?</h2>
+          <p>
+            Noodles are a staple food in many cultures (for example: Chinese noodles, Japanese noodles, Korean noodles, Filipino noodles, Vietnamese noodles, and Italian pasta).
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="get-inspired">
+      <h2>Get Inspired</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AIxN1IRi-wQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="noodle-accessories">
+      <h2>Noodle Accessories</h2>
+      <p>Support small businesses. Buy some <a href="https://www.etsy.com/search?q=noodle%20bowl">noodle bowls</a> here.</p>
+    </section>
+     </div>
+<div>
+  <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2021, wow it's noodles</span>
+    </footer>
+  </div>   
+</main>
