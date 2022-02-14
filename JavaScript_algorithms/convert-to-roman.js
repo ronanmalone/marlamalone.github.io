@@ -18,7 +18,7 @@ function convertToRoman(num) {
     console.log("Please input a number less than 4000.")
   }
 
-  //Number less than 10,000
+  //Number less than 4000
   if (numArr.length == 4) {
     let numFocThou = parseInt(numArr[0]) * 1000;
     let m = 1000;
@@ -42,10 +42,7 @@ function convertToRoman(num) {
     if (numFocHun == 0) {
       romanNum += "";
     }
-    if (numFocHun == 100) {
-      romanNum += "C";
-    }
-    if (numFocHun > 100 && numFocHun < 400) {
+    if (numFocHun > 0 && numFocHun < 400) {
       while (k <= numFocHun) {
       romanNum += romanMap.get(100);
       k += 100;
@@ -58,7 +55,7 @@ function convertToRoman(num) {
       romanNum += romanMap.get(500);
     }
     if (numFocHun > 500 && numFocHun < 900) {
-      romanNum = romanMap.get(500);
+      romanNum += romanMap.get(500);
       let temp = (numFocHun - 500);
       //console.log(temp);
       while (k <= temp) {
@@ -81,10 +78,7 @@ function convertToRoman(num) {
     if (numFocTen == 0) {
       romanNum += "";
     }
-    if (numFocTen == 10) {
-      romanNum += "X";
-    }
-    if (numFocTen > 10 && numFocTen < 40) {
+    if (numFocTen > 0 && numFocTen < 40) {
       while (j <= numFocTen) {
       romanNum += romanMap.get(10);
       j += 10;
@@ -93,7 +87,7 @@ function convertToRoman(num) {
     if (numFocTen == 40) {
       romanNum += "XL";
     }
-    if (numFocTen == 5) {
+    if (numFocTen == 50) {
       romanNum += romanMap.get(50);
     }
     if (numFocTen > 50 && numFocTen < 90) {
@@ -145,8 +139,6 @@ function convertToRoman(num) {
     }
   }
 
- 
-  console.log(romanNum);
   return romanNum;
 }
 
